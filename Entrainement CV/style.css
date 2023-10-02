@@ -1,0 +1,45 @@
+h1{
+    color: rgb(248, 0, 0);
+    text-align: center;
+    font-size: 50px;
+}
+html{
+    background-color: rgb(41, 114, 128);
+
+}
+.competences{
+    color: rgb(236, 233, 233);
+    font-size: 15px;
+    text-align: left;
+    background-color: rgb(100, 113, 170);
+}
+h4{
+    color: red;
+    border: 1px solid red;
+    font-size: 15px;
+}
+h2{
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 40px;
+}
+h3{
+    color: rgb(255, 255, 255);
+    text-decoration: underline red;
+    font-size: 30px;
+}
+.formation{
+    color: aliceblue;
+}
+.contact{
+    color: red;
+    background-color: rgb(190, 167, 132);
+}
+.tel{
+    color: red;
+    background-color: rgb(122, 207, 150);
+}
+.afci{
+    font-size: 20px;
+}
+
