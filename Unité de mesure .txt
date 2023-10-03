@@ -1,0 +1,21 @@
+unité absolue :
+
+Pixels  
+
+---------------------------------------------------------------------
+
+unité relatif :
+
+em en relatif a la taille de la police de l'element parent 
+rem Root em (en fonction de la taille de la police du navigateur)
+VW viewport width (en fonction de l'écran et la largeur uniquement)
+VH viewport height (en fonction de l'écran et la hauteur uniquement)
+% pourcentage 
+
+
+
+*{
+box-sizing: border-box;
+margin : 0;
+padding : 0;
+}
