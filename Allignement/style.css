@@ -1,0 +1,129 @@
+.p1{
+    background-color: blue;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.p2{
+    background-color: green;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.p3{
+    background-color: blue;
+    float: left;
+    width: 100px; height: 50px;
+    margin-left: 20px;
+}
+.p4{
+    background-color: green;
+    float: left;
+    width: 100px; height: 50px;
+    margin-left: 20px;
+}
+.p5{
+
+    margin-left: 20px;
+    background-color: red;
+    float: left;
+    width: 100px; height: 50px;
+}
+
+.div1{
+    position: relative;
+    top: 75px;
+    left: 20px;
+    padding: 40px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+.div2{
+    width: 50px; 
+    height: 20px; 
+    margin-left: 20px; 
+    background: yellow;
+}
+
+.centre1{
+    position: relative;
+    top: 75px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: gray;
+
+}
+
+.pcentre1{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+.centre2{
+    position: relative;
+    top: 75px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: rgb(155, 66, 66);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pcentre2{
+    line-height: 200px;
+}
+
+.centre3{
+    position: relative;
+    top: 75px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: rgb(84, 155, 66);
+    margin-top: 10px;
+    display: flex;
+}
+
+.pcentre3{
+    margin: auto;
+}
+
+.centre4{
+    position: relative;
+    top: 75px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: rgb(218, 214, 33);
+    margin-top: 10px;
+    display: table;
+    text-align: center;
+}
+
+.pcentre4{
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.centre5{
+    position: relative;
+    top: 75px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: rgb(82, 33, 218);
+    margin-top: 10px;
+    padding: 1px;
+    text-align: center;
+}
+
+.pcentre5{
+    margin: 85px;
+}
