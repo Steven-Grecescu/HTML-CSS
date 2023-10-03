@@ -1,0 +1,53 @@
+/*On passe le label en position absolue ainsi qu'en inline-block, on le positionne sur l'écran*/
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    left: 50%;
+    bottom: 50%;
+  }
+/* On masque la checkbox par défaut*/
+  .switch input { 
+    display: none;
+  }
+  /*On arrondi la slide box*/
+  .slider.round {
+    border-radius: 34px;
+  }
+/*On arrondi le rond dans la slide box*/
+  .slider.round:before {
+    border-radius: 55%;
+  } 
+/*On modifie la couleur du slider ainsi que ça position dans le label, on affiche le pointer quand on passe la souris dessus*/
+  .slider {
+    position: absolute;
+    cursor: pointer;                /*Affichage du pointer*/
+    top: 0%;                       /*Positionnement*/
+    left: 0%;                     /*Positionnement*/
+    right: 0%;                   /*Positionnement*/
+    bottom: 0%;                 /*Positionnement*/
+    background-color: #ccc;  /*Couleur du fond*/
+    transition: 0.5s;         /*Temps de transition*/
+  }
+ 
+  .slider:before {
+    position: absolute;
+    content: "";                      /* Contenue vide */
+    height: 26px;                    /* Hauteur du rond interne*/
+    width: 26px;                    /* Largeur du rond interne*/
+    left: 4px;                     /* Position initiale du rond interne */
+    bottom: 4px;                  /* Position initiale du rond interne */
+    background-color: white;   /*Couleur du rond interne*/
+    transition: .4s;            /* Temps de transition entre les deux couleurs*/
+
+/*Changer la couleur si check sur slider*/
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+/*Changer la position si check sur slider */
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+

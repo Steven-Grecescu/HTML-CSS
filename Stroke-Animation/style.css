@@ -1,0 +1,69 @@
+.svg1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    fill: none;
+    stroke: black;
+}
+
+.svg2{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    fill: none;
+    stroke: black;
+
+}
+
+.svg1{
+    background: rgb(255, 255, 255);
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-name: rotation; 
+
+
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.svg2{
+
+    background: rgb(255, 255, 255);
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotation; 
+
+
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/* 
+.cercle2{
+
+        width: 80px;
+        height: 80px;
+        border-radius: 60px;
+        background: blue;
+} */
