@@ -1,0 +1,66 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+}
+
+.main{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.divvert{
+    display: flex;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aqua;
+}
+
+.divhorimain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+
+    
+}
+
+.divhori1{
+    background-color: coral;
+    height: 30%;
+    margin: 10px 0px 10px 10px;
+    
+}
+
+.divhori2{
+    background-color: darkgreen;
+    height: 30%;
+    margin: 5px 0px 10px 10px;
+}
+
+.divhori3{
+    background-color: goldenrod;
+    height: 30%;
+    margin: 5px 0px 10px 10px;
+}
+
+.header{
+    height: 150px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.footer{
+    display: flex;
+    height: 150px;
+    background-color: red;
+    margin-top:10px;
+}

@@ -1,9 +1,9 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -11,8 +11,15 @@ nav a {
     color: #333;
     font-size: 20px;
     text-decoration: none;
-    margin: 0 10px;
-  }
+    margin: 0px 65px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+
+}
+
+a:hover {
+    background-color: gray;
+}
 
 nav {
     width: 100%;
@@ -22,28 +29,28 @@ nav {
     padding: 15px 0;
 }
 
-.header{
-    display:inline-block;
+.header {
+    display: inline-block;
     height: 255px;
     width: 100%;
 }
 
-.bgheader{
+.bgheader {
     display: inline-block;
     height: 250px;
     width: 100%;
 }
 
-.logo{
+.logo {
     position: absolute;
     justify-content: center;
     display: flex;
     align-items: center;
-    top: 9%;
-    left: 40%;
+    top: 10%;
+    left: 630px;
 }
 
-.whyphoto{
+.whyphoto {
     display: flex;
     width: 100%;
     height: 550px;
@@ -51,24 +58,23 @@ nav {
     justify-content: center;
 }
 
-.photographe{
+.photographe {
     display: inline-block;
     height: 450px;
     width: 380px;
     margin-left: 1%;
-    margin-top: 1%;
 }
 
-.why{
+.why {
     display: inline-block;
     left: 30%;
     height: 450px;
     width: 380px;
-    background-color:#ccc;
+    background-color: #ccc;
     margin-right: 1%;
 }
 
-.apropos{
+.apropos {
     margin-top: 5%;
     display: inline-block;
     position: relative;
@@ -78,22 +84,60 @@ nav {
     font-size: small;
 }
 
-.premierh3{
+.premierh3 {
     display: inline-block;
     text-align: center;
     position: relative;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-left: 15%;
     padding-right: 10%;
     font-family: 'Roboto', sans-serif;
 }
 
-.pph3{
+.pph3 {
     display: inline-block;
-    padding-top: 20%;
+    padding-top: 5%;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.nous {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    width: 80%;
+}
+
+.location-container,
+.hebergement-container,
+.inspiration-container,
+.cadeaux-container {
+    position: relative;
+    background-color: #333;
+    left: 38%;
+    top: -15%;
+    width: 52px;
+    height: 52px;
+}
+
+.locationsvg,
+.hebergementsvg,
+.inspirationsvg,
+.cadeauxsvg {
+    position: relative;
+    top: 10%;
+    width: 20px;
+    height: 40px;
+
 }
 
 .container {
@@ -101,20 +145,20 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
+}
+
 .bgoffre {
     position: relative;
     width: 100%;
     margin-top: 20px;
-  }
-  
+}
+
 .bgoffre img {
     width: 100%;
     max-width: 100%;
     height: auto;
-  }
-  
+}
+
 .content {
     position: absolute;
     height: 200px;
@@ -122,43 +166,88 @@ nav {
     top: 20px;
     left: 10px;
     right: 10px;
-  }
-  
+}
+
 .pbg {
     margin-top: 1%;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
-  }
-  
+    line-height: 25px;
+
+}
+
 .c-container {
     position: absolute;
     top: 200px;
-    left: 0; 
-    right: 0; 
+    left: 0;
+    right: 0;
     display: flex;
-    justify-content: center; 
-  }
-  
-.c1,.c2,.c3,.c4 {
+    justify-content: center;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
     width: 200px;
     height: 200px;
     background-color: #ffbc2c;
-    margin: 0 20px; 
-  }
-  
+    margin: 0 20px;
+}
+
+.c1:hover,
+.c2:hover,
+.c3:hover,
+.c4:hover {
+    background-color: #8da881;
+}
+
+.c1:hover .destination,
+.c2:hover .hebergement,
+.c3:hover .inspiration,
+.c4:hover .cadeaux {
+    background-color: white;
+    border-top: 0px;
+    border-bottom: 0px;
+
+}
+
+.c1:hover .location-container,
+.c2:hover .hebergement-container,
+.c3:hover .inspiration-container,
+.c4:hover .cadeaux-container {
+    animation: move-in 500ms;
+    transform: translateY(50px);
+}
+
+@keyframes move-in {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+
+
 .box-content {
-   margin-top: 20%;
-  }
-  
-.destination, .hebergement, .inspiration, .cadeaux{
-    margin-top: 40%;
+    margin-top: 20%;
+}
+
+.destination,
+.hebergement,
+.inspiration,
+.cadeaux {
+    margin-top: 20%;
     margin-left: 10%;
     border-top: 1px solid;
     border-bottom: 1px solid;
     width: 80%;
+    height: 20px;
 }
 
-.avis{
+.avis {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -166,132 +255,131 @@ nav {
     background-color: rgb(245, 236, 236);
 }
 
-.headavis{
+.headavis {
     text-align: center;
     justify-content: center;
     margin-top: 200px;
     font-family: 'Roboto', sans-serif;
     font-weight: 1000;
 }
- 
-.apogauche{
+
+.apogauche {
     position: absolute;
     left: 30%;
     top: 50%;
 
 }
 
-.apodroite{
+.apodroite {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 30%;
 }
 
-.jeromecom{
+.jeromecom {
     position: absolute;
-    text-align: center;
-    right: -250%;
+    margin-top: 10px;
+    right: -340%;
     top: 50px;
     width: 350px;
+    font-style: italic;
     font-family: 'Roboto', sans-serif;
 }
 
-.jerome{
+.jerome {
     position: absolute;
     top: 120px;
-    right: 150%;
-    width: 100px;
+    right: -150%;
+    width: 200px;
+    color: #6d8b60;
     font-family: 'Roboto', sans-serif;
 }
 
-.christinecom{
+.christinecom {
     position: absolute;
-    text-align: center;
+    margin-top: 10px;
     left: -250%;
     top: 50px;
     width: 350px;
+    font-style: italic;
     font-family: 'Roboto', sans-serif;
 }
 
 
-.christine{
+.christine {
     position: absolute;
     top: 120px;
-    right: 150%;
-    width: 100px;
+    right: -250%;
+    width: 200px;
+    color: #6d8b60;
     font-family: 'Roboto', sans-serif;
 
 }
 
-/* .content-footer{
-    position: relative;
-    background-color: #8da881;
-    width: 100%;
-    height: 600px;
-}
-*/
-.footerdesc{
+.footerdesc {
     position: absolute;
     color: white;
-    left:25% ;
+    left: 25%;
     top: 50px;
     text-align: center;
     justify-content: center;
     width: 800px;
-} 
+}
 
 .content-footer {
     background-color: #8da881;
     width: 100%;
     height: 600px;
-    text-align: center; /* Centre le contenu horizontalement */
+    text-align: center;
     position: relative;
 }
 
 .content-footer div {
-    display: inline-block; /* Aligne les éléments horizontalement */
-    vertical-align: top; /* Aligne les éléments en haut de la ligne */
-    margin: 0 10px; /* Espace horizontalement entre les éléments (ajustez selon vos préférences) */
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
 }
 
-.domediv{
+.domediv {
     position: absolute;
     top: 20%;
     left: 20%;
     width: 218px;
     height: 425px;
     background-color: orange
+}
 
-} 
-.roulottediv{
+.roulottediv {
     position: absolute;
     top: 20%;
     left: 35%;
     width: 218px;
     height: 425px;
     background-color: orange
+}
 
-} 
-.cabannediv{
+.cabannediv {
     position: absolute;
     top: 20%;
     left: 65%;
     width: 218px;
     height: 425px;
     background-color: orange
+}
 
-} 
-.tipidiv{
+.tipidiv {
     position: absolute;
     top: 20%;
     left: 50%;
     width: 218px;
     height: 425px;
     background-color: orange
+}
 
-} 
-
-.dome, .roulotte, .cabanne, .tipi{
+.dome,
+.roulotte,
+.cabanne,
+.tipi {
     top: 20%;
     width: 218px;
     height: 360px;
@@ -299,7 +387,7 @@ nav {
 
 }
 
-h4{
+h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
