@@ -1,3 +1,4 @@
+/* Reinitialisation des bordures du navigateur */
 *,
 ::before,
 ::after {
@@ -6,50 +7,62 @@
     padding: 0;
 }
 
+/* Barre de navigation */
 nav a {
     display: inline-block;
     color: #333;
     font-size: 20px;
     text-decoration: none;
-    margin: 0px 65px;
+    padding-top: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 
 }
 
-a:hover {
-    background-color: gray;
+/* zone de selection de la barre de navigation */
+a {
+    width: 300px;
+    height: 45px;
+    text-align: center;
 }
 
+/* Changement de la couleur au survol d'une des zones de selection */
+a:hover {
+    background-color: #ccc;
+}
+
+/*Taille et position de la barre de nav*/
 nav {
     width: 100%;
     background: #f1f1f1;
     display: flex;
     justify-content: center;
-    padding: 15px 0;
 }
 
+/*Header*/
 .header {
     display: inline-block;
     height: 255px;
     width: 100%;
 }
 
+/*Fond du header*/
 .bgheader {
     display: inline-block;
     height: 250px;
     width: 100%;
 }
 
+/*Logo Escapade et position*/
 .logo {
     position: absolute;
     justify-content: center;
-    display: flex;
     align-items: center;
     top: 10%;
     left: 630px;
 }
 
+/*Bloc contenant la photographe et le a propos*/
 .whyphoto {
     display: flex;
     width: 100%;
@@ -58,6 +71,7 @@ nav {
     justify-content: center;
 }
 
+/*Bloc contenant la photographe*/
 .photographe {
     display: inline-block;
     height: 450px;
@@ -65,6 +79,7 @@ nav {
     margin-left: 1%;
 }
 
+/*Bloc contenant le a propos*/
 .why {
     display: inline-block;
     left: 30%;
@@ -74,6 +89,7 @@ nav {
     margin-right: 1%;
 }
 
+/*bloc du a propos*/
 .apropos {
     margin-top: 5%;
     display: inline-block;
@@ -84,6 +100,7 @@ nav {
     font-size: small;
 }
 
+/* Titre h3 : Pourquoi choisir Escapade*/
 .premierh3 {
     display: inline-block;
     text-align: center;
@@ -94,6 +111,7 @@ nav {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Paragraphe sous h3*/
 .pph3 {
     display: inline-block;
     padding-top: 5%;
@@ -103,6 +121,7 @@ nav {
     line-height: 25px;
 }
 
+/*Decouvrir notre histoire*/
 .nous {
     display: inline-block;
     margin-top: 20px;
@@ -117,6 +136,7 @@ nav {
     width: 80%;
 }
 
+/*Les 4 container pour chaque catégorie*/
 .location-container,
 .hebergement-container,
 .inspiration-container,
@@ -129,6 +149,7 @@ nav {
     height: 52px;
 }
 
+/*Les 4 SVG des container*/
 .locationsvg,
 .hebergementsvg,
 .inspirationsvg,
@@ -140,6 +161,12 @@ nav {
 
 }
 
+/*Changement de la couleur des SVG en blanc*/
+#styleicon {
+    fill: white;
+}
+
+/*Container principal qui contient tout les svg, le paragraphe et les 4 plus petit container*/
 .container {
     text-align: center;
     display: flex;
@@ -147,18 +174,21 @@ nav {
     align-items: center;
 }
 
+/*Container de l'image de fond*/
 .bgoffre {
     position: relative;
     width: 100%;
     margin-top: 20px;
 }
 
+/*Image de fond*/
 .bgoffre img {
     width: 100%;
     max-width: 100%;
     height: auto;
 }
 
+/*Container sur l'image*/
 .content {
     position: absolute;
     height: 200px;
@@ -168,6 +198,7 @@ nav {
     right: 10px;
 }
 
+/*Paragraphe*/
 .pbg {
     margin-top: 1%;
     font-family: 'Roboto', sans-serif;
@@ -175,6 +206,7 @@ nav {
 
 }
 
+/*Container des 4 carrés*/
 .c-container {
     position: absolute;
     top: 200px;
@@ -184,6 +216,7 @@ nav {
     justify-content: center;
 }
 
+/*Les 4 carrés*/
 .c1,
 .c2,
 .c3,
@@ -194,6 +227,7 @@ nav {
     margin: 0 20px;
 }
 
+/*Changement de couleur au survol d'un des carré*/
 .c1:hover,
 .c2:hover,
 .c3:hover,
@@ -201,6 +235,7 @@ nav {
     background-color: #8da881;
 }
 
+/*Changement de la couleur et suprression des bordures du texte au survol */
 .c1:hover .destination,
 .c2:hover .hebergement,
 .c3:hover .inspiration,
@@ -211,6 +246,7 @@ nav {
 
 }
 
+/*Animation au survol*/
 .c1:hover .location-container,
 .c2:hover .hebergement-container,
 .c3:hover .inspiration-container,
@@ -219,6 +255,7 @@ nav {
     transform: translateY(50px);
 }
 
+/*Animation Descente*/
 @keyframes move-in {
     0% {
         transform: translateY(0px);
@@ -230,11 +267,12 @@ nav {
 }
 
 
-
+/*Box qui contient la petite phrase en bas des carré*/
 .box-content {
     margin-top: 20%;
 }
 
+/*Mise en forme des texte en majuscule dans les carré*/
 .destination,
 .hebergement,
 .inspiration,
@@ -247,6 +285,7 @@ nav {
     height: 20px;
 }
 
+/*Bloc de la partie avis*/
 .avis {
     position: relative;
     display: inline-block;
@@ -255,6 +294,7 @@ nav {
     background-color: rgb(245, 236, 236);
 }
 
+/*Tête du bloc avis*/
 .headavis {
     text-align: center;
     justify-content: center;
@@ -263,6 +303,7 @@ nav {
     font-weight: 1000;
 }
 
+/*Bloc apostrophe gauche*/
 .apogauche {
     position: absolute;
     left: 30%;
@@ -270,12 +311,14 @@ nav {
 
 }
 
+/*Bloc apostrophe droite*/
 .apodroite {
     position: absolute;
     top: 50%;
     right: 30%;
 }
 
+/*Commentaire de jerome*/
 .jeromecom {
     position: absolute;
     margin-top: 10px;
@@ -286,6 +329,7 @@ nav {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Nom de jerome*/
 .jerome {
     position: absolute;
     top: 120px;
@@ -295,27 +339,38 @@ nav {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Commentaire de christine*/
 .christinecom {
     position: absolute;
     margin-top: 10px;
-    left: -250%;
+    left: -275%;
     top: 50px;
     width: 350px;
     font-style: italic;
     font-family: 'Roboto', sans-serif;
 }
 
-
+/*Nom de christine*/
 .christine {
     position: absolute;
     top: 120px;
-    right: -250%;
+    right: -200%;
     width: 200px;
     color: #6d8b60;
     font-family: 'Roboto', sans-serif;
 
 }
 
+/*footer*/
+.content-footer {
+    background-color: #8da881;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    position: relative;
+}
+
+/*Texte en blanc dans le footer*/
 .footerdesc {
     position: absolute;
     color: white;
@@ -326,20 +381,13 @@ nav {
     width: 800px;
 }
 
-.content-footer {
-    background-color: #8da881;
-    width: 100%;
-    height: 600px;
-    text-align: center;
-    position: relative;
-}
-
 .content-footer div {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px;
 }
 
+/*container orange avec la premiere image dedans*/
 .domediv {
     position: absolute;
     top: 20%;
@@ -349,6 +397,7 @@ nav {
     background-color: orange
 }
 
+/*container orange avec la deuxieme image dedans*/
 .roulottediv {
     position: absolute;
     top: 20%;
@@ -358,6 +407,7 @@ nav {
     background-color: orange
 }
 
+/*container orange avec la troisieme image dedans*/
 .cabannediv {
     position: absolute;
     top: 20%;
@@ -367,6 +417,7 @@ nav {
     background-color: orange
 }
 
+/*container orange avec la quatrieme image dedans*/
 .tipidiv {
     position: absolute;
     top: 20%;
@@ -376,6 +427,7 @@ nav {
     background-color: orange
 }
 
+/*Positionnement des images*/
 .dome,
 .roulotte,
 .cabanne,
@@ -387,6 +439,7 @@ nav {
 
 }
 
+/*Changement de la police de titre h4*/
 h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
