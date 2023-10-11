@@ -59,8 +59,10 @@ main {
   height: 110vh;
   width: 100%;
   background-image: url('/Genres/Garçon/Images/garcon.jpg');
-  background-size: cover;
-  background-position-y: -45vh;
+  background-color: #e0dedc;
+  background-size: 110vh 140vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 main div {
   display: flex;

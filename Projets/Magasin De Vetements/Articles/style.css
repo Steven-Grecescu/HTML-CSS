@@ -1,4 +1,3 @@
-/* Reinitialisation des bordures du navigateur */
 *,
 ::before,
 ::after {
@@ -57,35 +56,27 @@ header nav {
   text-align: center;
 }
 main {
-  height: 110vh;
   width: 100%;
-  background-image: url('/Images/homme.jpg');
-  background-color: #9aaaaa;
-  background-size: 110vh 140vh;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-main div {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  width: 100%;
-  height: 110vh;
-}
-main div article {
-  margin: 1vh;
-  width: 30vh;
-  height: 30vh;
+  height: 140vh;
+  background-color: gray;
 }
 main h2 {
-  height: 4vh;
   text-align: center;
-  align-items: center;
-  font-size: xx-large;
+}
+main article {
+  display: flex;
+  width: 100%;
+  height: 25vh;
   margin: 1vh;
+  justify-content: center;
+  align-items: center;
+}
+main section {
+  margin: 15vh;
+  font-size: x-large;
 }
 main img {
-  object-fit: scale-down;
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  width: 20vh;
+  height: 20vh;
 }
