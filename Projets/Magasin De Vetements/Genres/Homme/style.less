@@ -100,3 +100,45 @@ main{
         height: 100%;
     }
 }
+
+// Telephone
+@media screen and (max-width:384px){
+    main{
+        height: 110vh;
+        width: 100%;
+        background-image: url('/Images/homme.jpg');
+        background-color: #9aaaaa;
+        background-size:110vh 140vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        div{
+             display: flex;
+             flex-flow: column;
+             align-items: center;
+             width: 100%;
+             height: 110vh;
+            //  background-color: aqua;
+             article{
+                // background-color: rgb(223, 204, 204);
+                width: 30vh;
+                height: 30vh;
+            }
+        }
+    
+        h2{
+            height: 4vh;
+            text-align: center;
+            align-items: center;
+            // background-color: blue;
+            font-size:xx-large;
+            margin: 1vh;
+        }
+    
+        img{
+            object-fit:scale-down;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
