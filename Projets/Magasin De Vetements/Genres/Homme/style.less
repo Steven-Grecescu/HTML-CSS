@@ -76,10 +76,10 @@ main{
          align-items: center;
          width: 100%;
          height: 110vh;
+         justify-content: space-evenly;
         //  background-color: aqua;
          article{
             // background-color: rgb(223, 204, 204);
-            margin: 1vh;
             width: 30vh;
             height: 30vh;
         }
@@ -104,22 +104,24 @@ main{
 // Telephone
 @media screen and (max-width:384px){
     main{
-        height: 110vh;
+        height: 100%;
         width: 100%;
         background-image: url('/Images/homme.jpg');
         background-color: #9aaaaa;
-        background-size:110vh 140vh;
+        background-size:100% 100%;
         background-position: center;
         background-repeat: no-repeat;
         div{
              display: flex;
              flex-flow: column;
              align-items: center;
+             
              width: 100%;
-             height: 110vh;
+             height: 100%;
             //  background-color: aqua;
              article{
-                // background-color: rgb(223, 204, 204);
+                // background-color: rgb(223, 204, 204); 
+                margin: 15px;     
                 width: 30vh;
                 height: 30vh;
             }

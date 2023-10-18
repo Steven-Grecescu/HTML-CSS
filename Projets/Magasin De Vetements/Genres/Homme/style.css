@@ -71,9 +71,9 @@ main div {
   align-items: center;
   width: 100%;
   height: 110vh;
+  justify-content: space-evenly;
 }
 main div article {
-  margin: 1vh;
   width: 30vh;
   height: 30vh;
 }
@@ -91,11 +91,11 @@ main img {
 }
 @media screen and (max-width: 384px) {
   main {
-    height: 110vh;
+    height: 100%;
     width: 100%;
     background-image: url('/Images/homme.jpg');
     background-color: #9aaaaa;
-    background-size: 110vh 140vh;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -104,9 +104,10 @@ main img {
     flex-flow: column;
     align-items: center;
     width: 100%;
-    height: 110vh;
+    height: 100%;
   }
   main div article {
+    margin: 15px;
     width: 30vh;
     height: 30vh;
   }
