@@ -91,8 +91,11 @@ main div {
 main div p {
   color: #ffffff;
   text-align: center;
+  margin-left: 3vh;
+  margin-right: 3vh;
 }
 main div img {
-  height: 100%;
-  width: 100%;
+  margin-left: 3vh;
+  height: 15%;
+  width: 30%;
 }
